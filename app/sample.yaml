@@ -19,4 +19,4 @@ tests:
     tags:
       - test_app
     platform_allow:
-      - native_sim (editado) 
+      - native_sim
