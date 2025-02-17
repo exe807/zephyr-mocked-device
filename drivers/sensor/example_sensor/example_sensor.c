@@ -30,7 +30,6 @@ static int example_sensor_sample_fetch(const struct device *dev, enum sensor_cha
 
     if (fscanf(data->csv_file, "%d\n", &data->state) < 0)
     {
-        LOG_ERR("Error reading file");
         return -EIO;
     }
 
