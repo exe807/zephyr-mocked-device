@@ -8,3 +8,15 @@ config EXAMPLE_SENSOR
 	select GPIO
 	help
 	  Enable example sensor
+
+config PATH_TO_CSV_FILE
+	string "Path to the CSV file"
+	default "./data.csv"
+	help
+	  Configura la ruta al archivo CSV.
+
+config SIZE_LINE_MAX
+	int "Max size of a line in the CSV file"
+	default 10
+	help
+	  Configura el tamaño máximo de una línea en el archivo CSV.
